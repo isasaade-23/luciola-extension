@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body { width: 300px; margin: 0; font-family: system-ui, sans-serif;
+         background: #F6F2EE; color: #2B2B2B; }
+  header { display: flex; align-items: center; gap: 8px; padding: 12px 14px 8px; }
+  header img { width: 22px; height: 22px; }
+  header b { font-size: 16px; letter-spacing: .5px; color: #1F3050; }
+  header small { margin-left: auto; font-size: 10px; font-weight: 700;
+                 color: #fff; background: #EE6C4D; border-radius: 999px; padding: 2px 7px; }
+  main { padding: 4px 14px 12px; }
+  button#scan { width: 100%; padding: 10px 0; border: 0; border-radius: 999px;
+                background: #1F3050; color: #fff; font-weight: 800; font-size: 13px;
+                letter-spacing: 1px; text-transform: uppercase; cursor: pointer; }
+  button#scan:hover { background: #EE6C4D; }
+  .row { display: flex; align-items: center; gap: 8px; margin: 12px 0 4px; font-size: 12px; }
+  .row input { flex: 1; accent-color: #EE6C4D; }
+  #thval { font-variant-numeric: tabular-nums; font-weight: 800; color: #1F3050; }
+  #stats { font-size: 12.5px; margin: 10px 0 0; min-height: 18px; color: #1F3050; }
+  #stats b { color: #B93A20; }
+  .note { font-size: 11px; color: #5D6673; line-height: 1.5; margin: 10px 0 0; }
+  .note a { color: #3D5A80; font-weight: 700; }
+</style>
+</head>
+<body>
+<header>
+  <img src="../icons/icon48.png" alt="">
+  <b>Luciola</b>
+  <small>BETA 2.0</small>
+</header>
+<main>
+  <button id="scan"></button>
+  <div class="row">
+    <span id="thlabel"></span>
+    <input id="th" type="range" min="0.05" max="0.80" step="0.01">
+    <span id="thval"></span>
+  </div>
+  <div id="stats"></div>
+  <p class="note" id="note"></p>
+</main>
+<script src="popup.js"></script>
+</body>
+</html>

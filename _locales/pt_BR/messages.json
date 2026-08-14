@@ -1,0 +1,12 @@
+{
+  "ext_name": { "message": "Luciola: triagem de discurso de ódio" },
+  "ext_desc": { "message": "Destaca provável discurso de ódio na página que você escolher analisar. Roda inteiro no seu aparelho: sem servidor, nenhum dado sai do navegador. Ferramenta de pesquisa que apoia o julgamento humano, nunca bloqueia nem remove nada." },
+  "scan": { "message": "Analisar esta página" },
+  "scanning": { "message": "Analisando..." },
+  "threshold": { "message": "Limiar" },
+  "stats_scanned": { "message": "Blocos analisados:" },
+  "stats_flagged": { "message": "sinalizados:" },
+  "cannot_scan": { "message": "Esta página não pode ser analisada (páginas do navegador são protegidas)." },
+  "disclaimer": { "message": "As probabilidades são uma representação do modelo, não um veredito humano. O estudo por trás da ferramenta mede sobre-sinalização de alguns termos de identidade. Ela apoia a revisão, não a substitui." },
+  "learn_more": { "message": "Saiba mais" }
+}

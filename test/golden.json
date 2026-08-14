@@ -1,0 +1,824 @@
+[
+{
+"text": "I love this community, everyone is so welcoming!",
+"cleaned": "I love this community, everyone is so welcoming!",
+"raw": 0.01579551,
+"prob": 0.01519772
+},
+{
+"text": "i hate these faggots, they make me sick",
+"cleaned": "i hate these faggots, they make me sick",
+"raw": 0.87119,
+"prob": 0.58454384
+},
+{
+"text": "que vídeo incrível, parabéns pelo trabalho de vocês",
+"cleaned": "que vídeo incrível, parabéns pelo trabalho de vocês",
+"raw": 0.04600414,
+"prob": 0.01777677
+},
+{
+"text": "essas mulheres são todas umas vadias nojentas, deviam apanhar",
+"cleaned": "essas mulheres são todas umas vadias nojentas, deviam apanhar",
+"raw": 0.9340851,
+"prob": 0.66223417
+},
+{
+"text": "as mulheres da minha família são maravilhosas",
+"cleaned": "as mulheres da minha família são maravilhosas",
+"raw": 0.35983209,
+"prob": 0.08656761
+},
+{
+"text": "my gay friend is coming to dinner tonight",
+"cleaned": "my gay friend is coming to dinner tonight",
+"raw": 0.54885112,
+"prob": 0.20438856
+},
+{
+"text": "RT @someone check this out https://example.com/x #news",
+"cleaned": "<user> check this out <url> news",
+"raw": 0.22571534,
+"prob": 0.04462393
+},
+{
+"text": "vc é um lixo de pessoa, some daqui",
+"cleaned": "vc é um lixo de pessoa, some daqui",
+"raw": 0.14892496,
+"prob": 0.03020864
+},
+{
+"text": "great weather today ☀️ let's go outside 😄",
+"cleaned": "great weather today :sun: let's go outside :grinning_face_with_smiling_eyes:",
+"raw": 0.08436641,
+"prob": 0.02167801
+},
+{
+"text": "esse time joga muito 🔥🔥",
+"cleaned": "esse time joga muito :fire: :fire:",
+"raw": 0.0822135,
+"prob": 0.02143843
+},
+{
+"text": "you are all subhuman trash and deserve nothing",
+"cleaned": "you are all subhuman trash and deserve nothing",
+"raw": 0.60133944,
+"prob": 0.25309394
+},
+{
+"text": "@fulano @beltrano olha isso www.site.com.br",
+"cleaned": "<user> <user> olha isso <url>",
+"raw": 0.05220117,
+"prob": 0.01835672
+},
+{
+"text": "n1gger is a word i will not tolerate here",
+"cleaned": "n1gger is a word i will not tolerate here",
+"raw": 0.06932553,
+"prob": 0.0200575
+},
+{
+"text": "eu odeio segunda-feira",
+"cleaned": "eu odeio segunda-feira",
+"raw": 0.09515171,
+"prob": 0.02291815
+},
+{
+"text": "i hate mondays so much",
+"cleaned": "i hate mondays so much",
+"raw": 0.27092006,
+"prob": 0.05596952
+},
+{
+"text": "os imigrantes roubam nossos empregos, expulsem todos",
+"cleaned": "os imigrantes roubam nossos empregos, expulsem todos",
+"raw": 0.14246278,
+"prob": 0.02922571
+},
+{
+"text": "immigrants built this country, be kind",
+"cleaned": "immigrants built this country, be kind",
+"raw": 0.14675605,
+"prob": 0.02987522
+},
+{
+"text": "kkkkkkkk que meme bom",
+"cleaned": "kkkkkkkk que meme bom",
+"raw": 0.04696521,
+"prob": 0.01786552
+},
+{
+"text": "LOL this is hilarious",
+"cleaned": "LOL this is hilarious",
+"raw": 0.18179175,
+"prob": 0.03572383
+},
+{
+"text": "morra seu desgraçado",
+"cleaned": "morra seu desgraçado",
+"raw": 0.03908314,
+"prob": 0.01715034
+},
+{
+"text": "",
+"cleaned": "",
+"raw": 0.11191629,
+"prob": 0.02498451
+},
+{
+"text": "ok",
+"cleaned": "ok",
+"raw": 0.04918166,
+"prob": 0.01807186
+},
+{
+"text": "a b",
+"cleaned": "a b",
+"raw": 0.12481795,
+"prob": 0.0266973
+},
+{
+"text": "I LOVE THIS COMMUNITY, EVERYONE IS SO WELCOMING!",
+"cleaned": "I LOVE THIS COMMUNITY, EVERYONE IS SO WELCOMING!",
+"raw": 0.01579551,
+"prob": 0.01519772
+},
+{
+"text": "RT I love this community, everyone is so welcoming!",
+"cleaned": "I love this community, everyone is so welcoming!",
+"raw": 0.01579551,
+"prob": 0.01519772
+},
+{
+"text": "I love this community, everyone is so welcoming! 😡",
+"cleaned": "I love this community, everyone is so welcoming! :enraged_face:",
+"raw": 0.02218296,
+"prob": 0.01571039
+},
+{
+"text": "@user0 I love this community, everyone is so welcoming! #tag0 http://t.co/0",
+"cleaned": "<user> I love this community, everyone is so welcoming! tag0 <url>",
+"raw": 0.02039091,
+"prob": 0.01556487
+},
+{
+"text": "I love this community, everyone is so welcoming! I love this community, everyone is so welcoming!",
+"cleaned": "I love this community, everyone is so welcoming! I love this community, everyone is so welcoming!",
+"raw": 0.01579505,
+"prob": 0.01519768
+},
+{
+"text": "I HATE THESE FAGGOTS, THEY MAKE ME SICK",
+"cleaned": "I HATE THESE FAGGOTS, THEY MAKE ME SICK",
+"raw": 0.87119,
+"prob": 0.58454384
+},
+{
+"text": "RT i hate these faggots, they make me sick",
+"cleaned": "i hate these faggots, they make me sick",
+"raw": 0.87119,
+"prob": 0.58454384
+},
+{
+"text": "i hate these faggots, they make me sick 😡",
+"cleaned": "i hate these faggots, they make me sick :enraged_face:",
+"raw": 0.7642565,
+"prob": 0.44455704
+},
+{
+"text": "@user1 i hate these faggots, they make me sick #tag1 http://t.co/1",
+"cleaned": "<user> i hate these faggots, they make me sick tag1 <url>",
+"raw": 0.79785799,
+"prob": 0.48864737
+},
+{
+"text": "i hate these faggots, they make me sick i hate these faggots, they make me sick",
+"cleaned": "i hate these faggots, they make me sick i hate these faggots, they make me sick",
+"raw": 0.87584795,
+"prob": 0.59049894
+},
+{
+"text": "QUE VÍDEO INCRÍVEL, PARABÉNS PELO TRABALHO DE VOCÊS",
+"cleaned": "QUE VÍDEO INCRÍVEL, PARABÉNS PELO TRABALHO DE VOCÊS",
+"raw": 0.04600414,
+"prob": 0.01777677
+},
+{
+"text": "RT que vídeo incrível, parabéns pelo trabalho de vocês",
+"cleaned": "que vídeo incrível, parabéns pelo trabalho de vocês",
+"raw": 0.04600414,
+"prob": 0.01777677
+},
+{
+"text": "que vídeo incrível, parabéns pelo trabalho de vocês 😡",
+"cleaned": "que vídeo incrível, parabéns pelo trabalho de vocês :enraged_face:",
+"raw": 0.05604466,
+"prob": 0.01872569
+},
+{
+"text": "@user2 que vídeo incrível, parabéns pelo trabalho de vocês #tag2 http://t.co/2",
+"cleaned": "<user> que vídeo incrível, parabéns pelo trabalho de vocês tag2 <url>",
+"raw": 0.03256594,
+"prob": 0.0165803
+},
+{
+"text": "que vídeo incrível, parabéns pelo trabalho de vocês que vídeo incrível, parabéns pelo trabalho de vocês",
+"cleaned": "que vídeo incrível, parabéns pelo trabalho de vocês que vídeo incrível, parabéns pelo trabalho de vocês",
+"raw": 0.04885445,
+"prob": 0.01804125
+},
+{
+"text": "ESSAS MULHERES SÃO TODAS UMAS VADIAS NOJENTAS, DEVIAM APANHAR",
+"cleaned": "ESSAS MULHERES SÃO TODAS UMAS VADIAS NOJENTAS, DEVIAM APANHAR",
+"raw": 0.9340851,
+"prob": 0.66223417
+},
+{
+"text": "RT essas mulheres são todas umas vadias nojentas, deviam apanhar",
+"cleaned": "essas mulheres são todas umas vadias nojentas, deviam apanhar",
+"raw": 0.9340851,
+"prob": 0.66223417
+},
+{
+"text": "essas mulheres são todas umas vadias nojentas, deviam apanhar 😡",
+"cleaned": "essas mulheres são todas umas vadias nojentas, deviam apanhar :enraged_face:",
+"raw": 0.89921573,
+"prob": 0.61994346
+},
+{
+"text": "@user3 essas mulheres são todas umas vadias nojentas, deviam apanhar #tag3 http://t.co/3",
+"cleaned": "<user> essas mulheres são todas umas vadias nojentas, deviam apanhar tag3 <url>",
+"raw": 0.90555972,
+"prob": 0.62779686
+},
+{
+"text": "essas mulheres são todas umas vadias nojentas, deviam apanhar essas mulheres são todas umas vadias nojentas, deviam apanhar",
+"cleaned": "essas mulheres são todas umas vadias nojentas, deviam apanhar essas mulheres são todas umas vadias nojentas, deviam apanhar",
+"raw": 0.93245129,
+"prob": 0.66030349
+},
+{
+"text": "AS MULHERES DA MINHA FAMÍLIA SÃO MARAVILHOSAS",
+"cleaned": "AS MULHERES DA MINHA FAMÍLIA SÃO MARAVILHOSAS",
+"raw": 0.35983209,
+"prob": 0.08656761
+},
+{
+"text": "RT as mulheres da minha família são maravilhosas",
+"cleaned": "as mulheres da minha família são maravilhosas",
+"raw": 0.35983209,
+"prob": 0.08656761
+},
+{
+"text": "as mulheres da minha família são maravilhosas 😡",
+"cleaned": "as mulheres da minha família são maravilhosas :enraged_face:",
+"raw": 0.31219938,
+"prob": 0.0686524
+},
+{
+"text": "@user4 as mulheres da minha família são maravilhosas #tag4 http://t.co/4",
+"cleaned": "<user> as mulheres da minha família são maravilhosas tag4 <url>",
+"raw": 0.31809191,
+"prob": 0.07066692
+},
+{
+"text": "as mulheres da minha família são maravilhosas as mulheres da minha família são maravilhosas",
+"cleaned": "as mulheres da minha família são maravilhosas as mulheres da minha família são maravilhosas",
+"raw": 0.3554565,
+"prob": 0.08475961
+},
+{
+"text": "MY GAY FRIEND IS COMING TO DINNER TONIGHT",
+"cleaned": "MY GAY FRIEND IS COMING TO DINNER TONIGHT",
+"raw": 0.54885112,
+"prob": 0.20438856
+},
+{
+"text": "RT my gay friend is coming to dinner tonight",
+"cleaned": "my gay friend is coming to dinner tonight",
+"raw": 0.54885112,
+"prob": 0.20438856
+},
+{
+"text": "my gay friend is coming to dinner tonight 😡",
+"cleaned": "my gay friend is coming to dinner tonight :enraged_face:",
+"raw": 0.49601112,
+"prob": 0.16275747
+},
+{
+"text": "@user5 my gay friend is coming to dinner tonight #tag5 http://t.co/5",
+"cleaned": "<user> my gay friend is coming to dinner tonight tag5 <url>",
+"raw": 0.46735659,
+"prob": 0.14319249
+},
+{
+"text": "my gay friend is coming to dinner tonight my gay friend is coming to dinner tonight",
+"cleaned": "my gay friend is coming to dinner tonight my gay friend is coming to dinner tonight",
+"raw": 0.55244374,
+"prob": 0.20748792
+},
+{
+"text": "RT @SOMEONE CHECK THIS OUT HTTPS://EXAMPLE.COM/X #NEWS",
+"cleaned": "<user> CHECK THIS OUT <url> NEWS",
+"raw": 0.22571534,
+"prob": 0.04462393
+},
+{
+"text": "RT RT @someone check this out https://example.com/x #news",
+"cleaned": "RT <user> check this out <url> news",
+"raw": 0.29906906,
+"prob": 0.06435345
+},
+{
+"text": "RT @someone check this out https://example.com/x #news 😡",
+"cleaned": "<user> check this out <url> news :enraged_face:",
+"raw": 0.20310497,
+"prob": 0.03980595
+},
+{
+"text": "@user6 RT @someone check this out https://example.com/x #news #tag6 http://t.co/6",
+"cleaned": "<user> RT <user> check this out <url> news tag6 <url>",
+"raw": 0.25828499,
+"prob": 0.05254999
+},
+{
+"text": "RT @someone check this out https://example.com/x #news RT @someone check this out https://example.com/x #news",
+"cleaned": "<user> check this out <url> news RT <user> check this out <url> news",
+"raw": 0.27595176,
+"prob": 0.05738874
+},
+{
+"text": "VC É UM LIXO DE PESSOA, SOME DAQUI",
+"cleaned": "VC É UM LIXO DE PESSOA, SOME DAQUI",
+"raw": 0.14892496,
+"prob": 0.03020864
+},
+{
+"text": "RT vc é um lixo de pessoa, some daqui",
+"cleaned": "vc é um lixo de pessoa, some daqui",
+"raw": 0.14892496,
+"prob": 0.03020864
+},
+{
+"text": "vc é um lixo de pessoa, some daqui 😡",
+"cleaned": "vc é um lixo de pessoa, some daqui :enraged_face:",
+"raw": 0.13944715,
+"prob": 0.0287777
+},
+{
+"text": "@user7 vc é um lixo de pessoa, some daqui #tag7 http://t.co/7",
+"cleaned": "<user> vc é um lixo de pessoa, some daqui tag7 <url>",
+"raw": 0.10587953,
+"prob": 0.02422032
+},
+{
+"text": "vc é um lixo de pessoa, some daqui vc é um lixo de pessoa, some daqui",
+"cleaned": "vc é um lixo de pessoa, some daqui vc é um lixo de pessoa, some daqui",
+"raw": 0.14892496,
+"prob": 0.03020864
+},
+{
+"text": "GREAT WEATHER TODAY ☀️ LET'S GO OUTSIDE 😄",
+"cleaned": "GREAT WEATHER TODAY :sun: LET'S GO OUTSIDE :grinning_face_with_smiling_eyes:",
+"raw": 0.08436641,
+"prob": 0.02167801
+},
+{
+"text": "RT great weather today ☀️ let's go outside 😄",
+"cleaned": "great weather today :sun: let's go outside :grinning_face_with_smiling_eyes:",
+"raw": 0.08436641,
+"prob": 0.02167801
+},
+{
+"text": "great weather today ☀️ let's go outside 😄 😡",
+"cleaned": "great weather today :sun: let's go outside :grinning_face_with_smiling_eyes: :enraged_face:",
+"raw": 0.0935279,
+"prob": 0.0227271
+},
+{
+"text": "@user8 great weather today ☀️ let's go outside 😄 #tag8 http://t.co/8",
+"cleaned": "<user> great weather today :sun: let's go outside :grinning_face_with_smiling_eyes: tag8 <url>",
+"raw": 0.07419264,
+"prob": 0.02056846
+},
+{
+"text": "great weather today ☀️ let's go outside 😄 great weather today ☀️ let's go outside 😄",
+"cleaned": "great weather today :sun: let's go outside :grinning_face_with_smiling_eyes: great weather today :sun: let's go outside :grinning_face_with_smiling_eyes:",
+"raw": 0.08557395,
+"prob": 0.02181353
+},
+{
+"text": "ESSE TIME JOGA MUITO 🔥🔥",
+"cleaned": "ESSE TIME JOGA MUITO :fire: :fire:",
+"raw": 0.0822135,
+"prob": 0.02143843
+},
+{
+"text": "RT esse time joga muito 🔥🔥",
+"cleaned": "esse time joga muito :fire: :fire:",
+"raw": 0.0822135,
+"prob": 0.02143843
+},
+{
+"text": "esse time joga muito 🔥🔥 😡",
+"cleaned": "esse time joga muito :fire: :fire: :enraged_face:",
+"raw": 0.09267423,
+"prob": 0.02262729
+},
+{
+"text": "@user9 esse time joga muito 🔥🔥 #tag9 http://t.co/9",
+"cleaned": "<user> esse time joga muito :fire: :fire: tag9 <url>",
+"raw": 0.09790361,
+"prob": 0.02324552
+},
+{
+"text": "esse time joga muito 🔥🔥 esse time joga muito 🔥🔥",
+"cleaned": "esse time joga muito :fire: :fire: esse time joga muito :fire: :fire:",
+"raw": 0.08082231,
+"prob": 0.021285
+},
+{
+"text": "YOU ARE ALL SUBHUMAN TRASH AND DESERVE NOTHING",
+"cleaned": "YOU ARE ALL SUBHUMAN TRASH AND DESERVE NOTHING",
+"raw": 0.60133944,
+"prob": 0.25309394
+},
+{
+"text": "RT you are all subhuman trash and deserve nothing",
+"cleaned": "you are all subhuman trash and deserve nothing",
+"raw": 0.60133944,
+"prob": 0.25309394
+},
+{
+"text": "you are all subhuman trash and deserve nothing 😡",
+"cleaned": "you are all subhuman trash and deserve nothing :enraged_face:",
+"raw": 0.52973278,
+"prob": 0.18847507
+},
+{
+"text": "@user10 you are all subhuman trash and deserve nothing #tag10 http://t.co/10",
+"cleaned": "<user> you are all subhuman trash and deserve nothing tag10 <url>",
+"raw": 0.46650696,
+"prob": 0.14264343
+},
+{
+"text": "you are all subhuman trash and deserve nothing you are all subhuman trash and deserve nothing",
+"cleaned": "you are all subhuman trash and deserve nothing you are all subhuman trash and deserve nothing",
+"raw": 0.57828502,
+"prob": 0.23079894
+},
+{
+"text": "@FULANO @BELTRANO OLHA ISSO WWW.SITE.COM.BR",
+"cleaned": "<user> <user> OLHA ISSO <url>",
+"raw": 0.05220117,
+"prob": 0.01835672
+},
+{
+"text": "RT @fulano @beltrano olha isso www.site.com.br",
+"cleaned": "<user> <user> olha isso <url>",
+"raw": 0.05220117,
+"prob": 0.01835672
+},
+{
+"text": "@fulano @beltrano olha isso www.site.com.br 😡",
+"cleaned": "<user> <user> olha isso <url> :enraged_face:",
+"raw": 0.07453831,
+"prob": 0.02060523
+},
+{
+"text": "@user11 @fulano @beltrano olha isso www.site.com.br #tag11 http://t.co/11",
+"cleaned": "<user> <user> <user> olha isso <url> tag11 <url>",
+"raw": 0.05477153,
+"prob": 0.01860267
+},
+{
+"text": "@fulano @beltrano olha isso www.site.com.br @fulano @beltrano olha isso www.site.com.br",
+"cleaned": "<user> <user> olha isso <url> <user> <user> olha isso <url>",
+"raw": 0.05501551,
+"prob": 0.01862618
+},
+{
+"text": "N1GGER IS A WORD I WILL NOT TOLERATE HERE",
+"cleaned": "N1GGER IS A WORD I WILL NOT TOLERATE HERE",
+"raw": 0.06932553,
+"prob": 0.0200575
+},
+{
+"text": "RT n1gger is a word i will not tolerate here",
+"cleaned": "n1gger is a word i will not tolerate here",
+"raw": 0.06932553,
+"prob": 0.0200575
+},
+{
+"text": "n1gger is a word i will not tolerate here 😡",
+"cleaned": "n1gger is a word i will not tolerate here :enraged_face:",
+"raw": 0.07512343,
+"prob": 0.02066762
+},
+{
+"text": "@user12 n1gger is a word i will not tolerate here #tag12 http://t.co/12",
+"cleaned": "<user> n1gger is a word i will not tolerate here tag12 <url>",
+"raw": 0.05118651,
+"prob": 0.0182605
+},
+{
+"text": "n1gger is a word i will not tolerate here n1gger is a word i will not tolerate here",
+"cleaned": "n1gger is a word i will not tolerate here n1gger is a word i will not tolerate here",
+"raw": 0.06932553,
+"prob": 0.0200575
+},
+{
+"text": "EU ODEIO SEGUNDA-FEIRA",
+"cleaned": "EU ODEIO SEGUNDA-FEIRA",
+"raw": 0.09515171,
+"prob": 0.02291815
+},
+{
+"text": "RT eu odeio segunda-feira",
+"cleaned": "eu odeio segunda-feira",
+"raw": 0.09515171,
+"prob": 0.02291815
+},
+{
+"text": "eu odeio segunda-feira 😡",
+"cleaned": "eu odeio segunda-feira :enraged_face:",
+"raw": 0.10786988,
+"prob": 0.02446972
+},
+{
+"text": "@user13 eu odeio segunda-feira #tag13 http://t.co/13",
+"cleaned": "<user> eu odeio segunda-feira tag13 <url>",
+"raw": 0.08716591,
+"prob": 0.02199346
+},
+{
+"text": "eu odeio segunda-feira eu odeio segunda-feira",
+"cleaned": "eu odeio segunda-feira eu odeio segunda-feira",
+"raw": 0.09515171,
+"prob": 0.02291815
+},
+{
+"text": "I HATE MONDAYS SO MUCH",
+"cleaned": "I HATE MONDAYS SO MUCH",
+"raw": 0.27092006,
+"prob": 0.05596952
+},
+{
+"text": "RT i hate mondays so much",
+"cleaned": "i hate mondays so much",
+"raw": 0.27092006,
+"prob": 0.05596952
+},
+{
+"text": "i hate mondays so much 😡",
+"cleaned": "i hate mondays so much :enraged_face:",
+"raw": 0.23075633,
+"prob": 0.04577155
+},
+{
+"text": "@user14 i hate mondays so much #tag14 http://t.co/14",
+"cleaned": "<user> i hate mondays so much tag14 <url>",
+"raw": 0.1955489,
+"prob": 0.03830997
+},
+{
+"text": "i hate mondays so much i hate mondays so much",
+"cleaned": "i hate mondays so much i hate mondays so much",
+"raw": 0.2604622,
+"prob": 0.05312482
+},
+{
+"text": "OS IMIGRANTES ROUBAM NOSSOS EMPREGOS, EXPULSEM TODOS",
+"cleaned": "OS IMIGRANTES ROUBAM NOSSOS EMPREGOS, EXPULSEM TODOS",
+"raw": 0.14246278,
+"prob": 0.02922571
+},
+{
+"text": "RT os imigrantes roubam nossos empregos, expulsem todos",
+"cleaned": "os imigrantes roubam nossos empregos, expulsem todos",
+"raw": 0.14246278,
+"prob": 0.02922571
+},
+{
+"text": "os imigrantes roubam nossos empregos, expulsem todos 😡",
+"cleaned": "os imigrantes roubam nossos empregos, expulsem todos :enraged_face:",
+"raw": 0.15101835,
+"prob": 0.03053387
+},
+{
+"text": "@user15 os imigrantes roubam nossos empregos, expulsem todos #tag15 http://t.co/15",
+"cleaned": "<user> os imigrantes roubam nossos empregos, expulsem todos tag15 <url>",
+"raw": 0.14513482,
+"prob": 0.02962832
+},
+{
+"text": "os imigrantes roubam nossos empregos, expulsem todos os imigrantes roubam nossos empregos, expulsem todos",
+"cleaned": "os imigrantes roubam nossos empregos, expulsem todos os imigrantes roubam nossos empregos, expulsem todos",
+"raw": 0.12639712,
+"prob": 0.02691463
+},
+{
+"text": "IMMIGRANTS BUILT THIS COUNTRY, BE KIND",
+"cleaned": "IMMIGRANTS BUILT THIS COUNTRY, BE KIND",
+"raw": 0.14675605,
+"prob": 0.02987522
+},
+{
+"text": "RT immigrants built this country, be kind",
+"cleaned": "immigrants built this country, be kind",
+"raw": 0.14675605,
+"prob": 0.02987522
+},
+{
+"text": "immigrants built this country, be kind 😡",
+"cleaned": "immigrants built this country, be kind :enraged_face:",
+"raw": 0.15345346,
+"prob": 0.03091645
+},
+{
+"text": "@user16 immigrants built this country, be kind #tag16 http://t.co/16",
+"cleaned": "<user> immigrants built this country, be kind tag16 <url>",
+"raw": 0.12402645,
+"prob": 0.02658901
+},
+{
+"text": "immigrants built this country, be kind immigrants built this country, be kind",
+"cleaned": "immigrants built this country, be kind immigrants built this country, be kind",
+"raw": 0.14675605,
+"prob": 0.02987522
+},
+{
+"text": "KKKKKKKK QUE MEME BOM",
+"cleaned": "KKKKKKKK QUE MEME BOM",
+"raw": 0.04696521,
+"prob": 0.01786552
+},
+{
+"text": "RT kkkkkkkk que meme bom",
+"cleaned": "kkkkkkkk que meme bom",
+"raw": 0.04696521,
+"prob": 0.01786552
+},
+{
+"text": "kkkkkkkk que meme bom 😡",
+"cleaned": "kkkkkkkk que meme bom :enraged_face:",
+"raw": 0.06554494,
+"prob": 0.01966921
+},
+{
+"text": "@user17 kkkkkkkk que meme bom #tag17 http://t.co/17",
+"cleaned": "<user> kkkkkkkk que meme bom tag17 <url>",
+"raw": 0.03706083,
+"prob": 0.01697142
+},
+{
+"text": "kkkkkkkk que meme bom kkkkkkkk que meme bom",
+"cleaned": "kkkkkkkk que meme bom kkkkkkkk que meme bom",
+"raw": 0.05010948,
+"prob": 0.01815892
+},
+{
+"text": "LOL THIS IS HILARIOUS",
+"cleaned": "LOL THIS IS HILARIOUS",
+"raw": 0.18179175,
+"prob": 0.03572383
+},
+{
+"text": "RT LOL this is hilarious",
+"cleaned": "LOL this is hilarious",
+"raw": 0.18179175,
+"prob": 0.03572383
+},
+{
+"text": "LOL this is hilarious 😡",
+"cleaned": "LOL this is hilarious :enraged_face:",
+"raw": 0.17456432,
+"prob": 0.03443337
+},
+{
+"text": "@user18 LOL this is hilarious #tag18 http://t.co/18",
+"cleaned": "<user> LOL this is hilarious tag18 <url>",
+"raw": 0.12883272,
+"prob": 0.02725321
+},
+{
+"text": "LOL this is hilarious LOL this is hilarious",
+"cleaned": "LOL this is hilarious LOL this is hilarious",
+"raw": 0.1825602,
+"prob": 0.03586375
+},
+{
+"text": "MORRA SEU DESGRAÇADO",
+"cleaned": "MORRA SEU DESGRAÇADO",
+"raw": 0.03908314,
+"prob": 0.01715034
+},
+{
+"text": "RT morra seu desgraçado",
+"cleaned": "morra seu desgraçado",
+"raw": 0.03908314,
+"prob": 0.01715034
+},
+{
+"text": "morra seu desgraçado 😡",
+"cleaned": "morra seu desgraçado :enraged_face:",
+"raw": 0.06082404,
+"prob": 0.01919467
+},
+{
+"text": "@user19 morra seu desgraçado #tag19 http://t.co/19",
+"cleaned": "<user> morra seu desgraçado tag19 <url>",
+"raw": 0.03251048,
+"prob": 0.01657553
+},
+{
+"text": "morra seu desgraçado morra seu desgraçado",
+"cleaned": "morra seu desgraçado morra seu desgraçado",
+"raw": 0.03908314,
+"prob": 0.01715034
+},
+{
+"text": "RT ",
+"cleaned": "",
+"raw": 0.11191629,
+"prob": 0.02498451
+},
+{
+"text": " 😡",
+"cleaned": ":enraged_face:",
+"raw": 0.15455332,
+"prob": 0.03109077
+},
+{
+"text": "@user20  #tag20 http://t.co/20",
+"cleaned": "<user> tag20 <url>",
+"raw": 0.05719443,
+"prob": 0.01883747
+},
+{
+"text": " ",
+"cleaned": "",
+"raw": 0.11191629,
+"prob": 0.02498451
+},
+{
+"text": "OK",
+"cleaned": "OK",
+"raw": 0.04918166,
+"prob": 0.01807186
+},
+{
+"text": "RT ok",
+"cleaned": "ok",
+"raw": 0.04918166,
+"prob": 0.01807186
+},
+{
+"text": "ok 😡",
+"cleaned": "ok :enraged_face:",
+"raw": 0.09370146,
+"prob": 0.02274745
+},
+{
+"text": "@user21 ok #tag21 http://t.co/21",
+"cleaned": "<user> ok tag21 <url>",
+"raw": 0.03531248,
+"prob": 0.01681822
+},
+{
+"text": "ok ok",
+"cleaned": "ok ok",
+"raw": 0.04918166,
+"prob": 0.01807186
+},
+{
+"text": "A B",
+"cleaned": "A B",
+"raw": 0.12481795,
+"prob": 0.0266973
+},
+{
+"text": "RT a b",
+"cleaned": "a b",
+"raw": 0.12481795,
+"prob": 0.0266973
+},
+{
+"text": "a b 😡",
+"cleaned": "a b :enraged_face:",
+"raw": 0.15824516,
+"prob": 0.03168289
+},
+{
+"text": "@user22 a b #tag22 http://t.co/22",
+"cleaned": "<user> a b tag22 <url>",
+"raw": 0.06743035,
+"prob": 0.01986192
+},
+{
+"text": "a b a b",
+"cleaned": "a b a b",
+"raw": 0.12481795,
+"prob": 0.0266973
+}
+]

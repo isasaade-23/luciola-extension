@@ -1,0 +1,12 @@
+{
+  "ext_name": { "message": "Luciola: hate speech triage" },
+  "ext_desc": { "message": "Highlights probable hate speech on the page you choose to scan. Runs fully on your device: no server, no data leaves the browser. A research tool that supports human judgment, it never blocks or removes anything." },
+  "scan": { "message": "Scan this page" },
+  "scanning": { "message": "Scanning..." },
+  "threshold": { "message": "Threshold" },
+  "stats_scanned": { "message": "Blocks scanned:" },
+  "stats_flagged": { "message": "flagged:" },
+  "cannot_scan": { "message": "This page cannot be scanned (browser pages are protected)." },
+  "disclaimer": { "message": "Probabilities are a model representation, not a human verdict. The study behind this tool measures over-flagging of some identity terms. It supports review, it does not replace it." },
+  "learn_more": { "message": "Learn more" }
+}
