@@ -32,11 +32,12 @@ max deviation under 1e-8 on the golden set).
 
 ## Honest limits
 
-The study behind this tool measures real over-flagging of some identity terms
-(a neutral mention of an identity group can be flagged) and misses implicit
-hate without slurs. Probabilities are a model representation, not a human
-verdict. Research and educational use only: the training data licenses do not
-allow commercial use of the model weights.
+The study behind this tool measures real over-flagging of some identity terms:
+a neutral or even positive mention of an identity group can be flagged (the v5
+model, trained on adversarial examples, catches more implicit hate than v4 but
+also flags some pro-minority sentences — see the demo page). Probabilities are
+a model representation, not a human verdict. Research and educational use only:
+the training data licenses do not allow commercial use of the model weights.
 
 ## License
 
