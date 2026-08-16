@@ -10,7 +10,7 @@ taxa única US$5). Visibilidade: **Unlisted**.
 - **Categoria**: Ferramentas (Tools) — alternativa: Acessibilidade
 - **Idioma padrão**: Português (Brasil); adicionar inglês como segundo idioma
 - **Site**: https://github.com/isasaade-23/luciola-extension
-- **Privacy policy URL**: https://isasaade-23.github.io/luciola-extension/privacy
+- **Privacy policy URL**: https://isasaade-23.github.io/luciola-extension/privacy.html
 
 ## Descrição curta (até 132 caracteres)
 
