@@ -13,7 +13,7 @@ it never blocks, removes or reports anything.
 The model is the linear member of the [Luciola research
 study](https://isasaade-23.github.io/hate-speech-nlp-en-pt/): TF-IDF word and
 character features into a logistic regression, Platt-calibrated on a held-out
-validation split (corpus v4, test ROC-AUC 0.873). The exact Python pipeline is
+validation split (corpus v5, 113,826 rows, test ROC-AUC 0.884). The exact Python pipeline is
 ported to JavaScript and verified by a parity test (`node test/parity.test.js`,
 max deviation under 1e-8 on the golden set).
 
