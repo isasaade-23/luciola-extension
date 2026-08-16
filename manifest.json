@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "__MSG_ext_name__",
   "description": "__MSG_ext_desc__",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "default_locale": "en",
   "permissions": ["activeTab", "scripting", "storage"],
   "background": { "service_worker": "background.js", "type": "module" },
@@ -16,6 +16,6 @@
     "128": "icons/icon128.png"
   },
   "web_accessible_resources": [
-    { "resources": ["model/luciola_linear_v4.json"], "matches": ["<all_urls>"] }
+    { "resources": ["model/luciola_linear_v5.json"], "matches": ["<all_urls>"] }
   ]
 }

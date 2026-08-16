@@ -8,7 +8,7 @@ let modelPromise = null;
 
 function getModel() {
   if (!modelPromise) {
-    modelPromise = fetch(chrome.runtime.getURL("model/luciola_linear_v4.json"))
+    modelPromise = fetch(chrome.runtime.getURL("model/luciola_linear_v5.json"))
       .then((r) => r.json())
       .then((data) => new LuciolaModel(data));
   }

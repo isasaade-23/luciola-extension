@@ -17,7 +17,7 @@ validation split (corpus v4, test ROC-AUC 0.873). The exact Python pipeline is
 ported to JavaScript and verified by a parity test (`node test/parity.test.js`,
 max deviation under 1e-8 on the golden set).
 
-- `model/luciola_linear_v4.json` is exported by
+- `model/luciola_linear_v5.json` is exported by
   `hate-speech-project/scripts/export_extension_model.py`.
 - `src/clean.js`, `src/tfidf.js`, `src/model.js` reproduce cleaning,
   featurization and scoring.

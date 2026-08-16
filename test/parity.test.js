@@ -7,7 +7,7 @@ import { LuciolaModel } from "../src/model.js";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const model = new LuciolaModel(
-  JSON.parse(readFileSync(join(here, "..", "model", "luciola_linear_v4.json"), "utf-8"))
+  JSON.parse(readFileSync(join(here, "..", "model", "luciola_linear_v5.json"), "utf-8"))
 );
 const golden = JSON.parse(readFileSync(join(here, "golden.json"), "utf-8"));
 

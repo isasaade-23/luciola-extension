@@ -8,7 +8,7 @@ $("note").innerHTML =
   ' <a href="https://isasaade-23.github.io/hate-speech-nlp-en-pt/" target="_blank" rel="noopener">' +
   t("learn_more") + "</a>";
 
-const state = { threshold: 0.265 };
+const state = { threshold: 0.424 };
 
 chrome.runtime.sendMessage({ type: "luciola:meta" }, (resp) => {
   if (resp && typeof resp.threshold === "number") state.threshold = resp.threshold;
