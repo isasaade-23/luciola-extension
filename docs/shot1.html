@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Luciola extension test page</title>
+<style>
+  body { max-width: 720px; margin: 40px auto; font-family: system-ui, sans-serif;
+         line-height: 1.6; color: #2B2B2B; background: #F6F2EE; padding: 0 16px; }
+  h1 { color: #1F3050; }
+  h2 { color: #3D5A80; font-size: 15px; text-transform: uppercase; letter-spacing: 2px; }
+  p { background: #fff; border: 1px solid #DAD2C7; border-radius: 10px; padding: 10px 14px; }
+
+  .luciola-flag { outline: 2px solid rgba(238,108,77,.85); outline-offset: 2px; border-radius: 4px; position: relative; }
+  .luciola-chip { position: absolute; top: -10px; right: -6px; background: #1F3050; color: #fff; border: 1px solid #EE6C4D; border-radius: 999px; padding: 1px 7px; font: 700 10px/1.5 sans-serif; letter-spacing: .4px; }
+</style>
+</head>
+<body>
+<h1>Página de teste da extensão</h1>
+<p>Abra o popup da Luciola e clique em Analisar esta página. Os blocos abaixo cobrem
+os quatro exemplos do demo, casos neutros e menções neutras a identidade (viés
+conhecido do modelo).</p>
+
+<h2>Deve sinalizar (ódio explícito)</h2>
+<p class="luciola-flag">i hate these faggots, they make me sick<span class="luciola-chip">86%</span></p>
+<p class="luciola-flag">essas mulheres são todas umas vadias nojentas, deviam apanhar<span class="luciola-chip">57%</span></p>
+
+<h2>Ódio implícito, sem palavrão (o modelo v5 pega parte; era o ponto cego do v4)</h2>
+<p class="luciola-flag">you are all subhuman trash and deserve nothing<span class="luciola-chip">65%</span></p>
+<p>os imigrantes roubam nossos empregos, expulsem todos</p>
+
+<h2>Não deve sinalizar</h2>
+<p>I love this community, everyone is so welcoming!</p>
+<p>que vídeo incrível, parabéns pelo trabalho de vocês</p>
+<p>eu odeio segunda-feira, mas o café ajuda</p>
+<p>great weather today, let's go outside</p>
+
+<h2>Zona de viés conhecida (menção neutra a identidade — pode sinalizar por engano)</h2>
+<p>my gay friend is coming to dinner tonight</p>
+<p>as mulheres da minha família são maravilhosas</p>
+<p class="luciola-flag">immigrants built this country, be kind to newcomers<span class="luciola-chip">66%</span></p>
+</body>
+</html>
