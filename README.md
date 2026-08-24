@@ -41,5 +41,12 @@ the training data licenses do not allow commercial use of the model weights.
 
 ## License
 
-Code MIT. Model weights inherit research-only training data licenses; see the
-study's `methodology/data_provenance.md`.
+**Code**: [GNU Affero General Public License v3.0](LICENSE). The extension runs
+entirely in your browser and talks to no server, so in practice this behaves
+like the GPL: use it, study it, change it, and pass on the same freedoms with
+the source.
+
+**Model weights** (`model/luciola_linear_v5.json`): research and educational use
+only, no commercial use. Not under the AGPL, because the training-data licenses
+restrict what can be granted downstream. See [`LICENSE-MODEL.md`](LICENSE-MODEL.md)
+and the study's `methodology/data_provenance.md`.
