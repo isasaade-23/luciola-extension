@@ -39,6 +39,11 @@ also flags some pro-minority sentences — see the demo page). Probabilities are
 a model representation, not a human verdict. Research and educational use only:
 the training data licenses do not allow commercial use of the model weights.
 
+## Support
+
+This is independent research, self-funded and unpaid outside the author's stipend.
+One-off donations: [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/ailuciola)
+
 ## License
 
 **Code**: [GNU Affero General Public License v3.0](LICENSE). The extension runs
