@@ -8,5 +8,7 @@
   "stats_flagged": { "message": "flagged:" },
   "cannot_scan": { "message": "This page cannot be scanned (browser pages are protected)." },
   "disclaimer": { "message": "Probabilities are a model representation, not a human verdict. The study behind this tool measures over-flagging of some identity terms. It supports review, it does not replace it." },
-  "learn_more": { "message": "Learn more" }
+  "learn_more": { "message": "Learn more" },
+  "yt_blur_label": { "message": "Luciola: possible hate speech — show" },
+  "yt_counter": { "message": "$1 of $2 messages blurred" }
 }

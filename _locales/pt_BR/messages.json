@@ -8,5 +8,7 @@
   "stats_flagged": { "message": "sinalizados:" },
   "cannot_scan": { "message": "Esta página não pode ser analisada (páginas do navegador são protegidas)." },
   "disclaimer": { "message": "As probabilidades são uma representação do modelo, não um veredito humano. O estudo por trás da ferramenta mede sobre-sinalização de alguns termos de identidade. Ela apoia a revisão, não a substitui." },
-  "learn_more": { "message": "Saiba mais" }
+  "learn_more": { "message": "Saiba mais" },
+  "yt_blur_label": { "message": "Luciola: possível discurso de ódio — mostrar" },
+  "yt_counter": { "message": "$1 de $2 mensagens embaçadas" }
 }

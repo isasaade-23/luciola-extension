@@ -35,6 +35,16 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
     });
     return true; // async response
   }
+  // YouTube live chat: probabilities only, plus scoring time. No badge, and
+  // the texts are dropped as soon as the response is sent.
+  if (msg && msg.type === "luciola:scoreChat") {
+    getModel().then((model) => {
+      const t0 = performance.now();
+      const probs = msg.texts.map((t) => model.score(t).prob);
+      sendResponse({ probs, ms: performance.now() - t0, defaultThreshold: model.threshold });
+    });
+    return true;
+  }
   if (msg && msg.type === "luciola:meta") {
     getModel().then((model) => sendResponse({ threshold: model.threshold, meta: model.meta }));
     return true;

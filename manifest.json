@@ -32,5 +32,18 @@
       ]
     }
   ],
-  "homepage_url": "https://github.com/isasaade-23/luciola-extension"
+  "homepage_url": "https://github.com/isasaade-23/luciola-extension",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/live_chat*",
+        "https://www.youtube.com/live_chat_replay*"
+      ],
+      "js": [
+        "content_ytchat.js"
+      ],
+      "all_frames": true,
+      "run_at": "document_idle"
+    }
+  ]
 }
