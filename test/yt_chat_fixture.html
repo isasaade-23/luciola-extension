@@ -31,16 +31,16 @@
     <h3>Como usar</h3>
     <ol>
       <li>Abra esta página pelo endereço <code>chrome-extension://&lt;id da Luciola&gt;/test/yt_chat_fixture.html</code> (o id aparece em <code>brave://extensions</code>).</li>
-      <li>As 8 primeiras mensagens entram ao abrir. O botão abaixo acrescenta as outras 8, uma por clique, para testar mensagens novas.</li>
+      <li>As 8 primeiras mensagens entram ao abrir. O botão abaixo acrescenta as outras 10, uma por clique, para testar mensagens novas.</li>
       <li>Troque o nível no popup e veja o resultado mudar sem recarregar.</li>
     </ol>
     <button id="add">Adicionar mensagem</button>
     <h3>Esperado (modelo linear v5, frases sintéticas)</h3>
     <ul>
-      <li><b>Conservador (0,67):</b> embaça só a 16 ("tudo gado", 0,75).</li>
-      <li><b>Equilibrado (0,57):</b> embaça 11, 15 e 16.</li>
-      <li><b>Sensível (0,424):</b> embaça 9, 10, 11, 15 e 16.</li>
-      <li>As 8 críticas políticas (1 a 8) não embaçam em nenhum nível.</li>
+      <li><b>Conservador (0,67):</b> não embaça nenhuma.</li>
+      <li><b>Equilibrado (0,57):</b> embaça 11 e 15.</li>
+      <li><b>Sensível (0,424):</b> embaça 9, 10, 11 e 15.</li>
+      <li>As 8 críticas políticas (1 a 8), o xingamento partidário (16) e o par PT/PL (17 e 18) não embaçam em nenhum nível. Os nomes de partido são retirados antes de escorar; sem isso, a 16 embaçaria nos três níveis, a 17 no sensível e a 18 em nenhum.</li>
       <li>12, 13 e 14 são ódio explícito e não embaçam em nenhum nível: limitação conhecida do modelo.</li>
     </ul>
   </div>

@@ -9,7 +9,9 @@
 - Popup: on/off switch, three sensitivity levels (conservative 0.67, balanced
   0.57, sensitive 0.424; default conservative) and a limitations note.
 - Thresholds chosen by false positive rate on the Portuguese validation split.
-- Fixture `test/yt_chat_fixture.html` with 16 synthetic messages.
+- Party names and partisan labels removed before scoring in the chat mode, to
+  undo a learned party bias ("PT" alone scored 0.89, "PL" 0.12).
+- Fixture `test/yt_chat_fixture.html` with 18 synthetic messages.
 - No server, no collection, no message logging.
 
 ## 0.3.0 — 2026-08-16

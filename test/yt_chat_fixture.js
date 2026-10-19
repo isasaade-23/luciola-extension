@@ -1,6 +1,7 @@
 // Synthetic messages for the YouTube chat fixture. 1-8: harsh political
 // criticism without attacks on groups. 9-15: explicit hate against groups.
-// 16: partisan insult. Expected results per level are listed in the page.
+// 16: partisan insult. 17-18: the same sentence with PT and with PL, which
+// must score alike. Expected results per level are listed in the page.
 const MESSAGES = [
   "Esse candidato mentiu descaradamente sobre a economia",
   "Governo incompetente, vergonha nacional",
@@ -18,6 +19,8 @@ const MESSAGES = [
   "Macaco não sabe votar, volta pra senzala",
   "Esses viados nojentos tem que apanhar",
   "Petista e bolsonarista, tudo gado",
+  "Votei no PT a vida toda",
+  "Votei no PL a vida toda",
 ];
 
 const items = document.getElementById("items");

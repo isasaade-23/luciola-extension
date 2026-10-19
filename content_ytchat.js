@@ -49,9 +49,17 @@
     return LEVELS[settings.level] ?? LEVELS.conservative;
   }
 
+  // Party names and partisan labels are removed before scoring. In the
+  // Portuguese corpus they co-occur with hate, so the model learned "PT" alone
+  // as a hate cue (0.89) while "PL" scores 0.12: blurring by party would hide
+  // one side. Removing them makes both sides score alike; scores of attacks on
+  // groups do not change. The message shown in the chat is untouched.
+  const PARTISAN = /(?<![\p{L}\d])(pt|pl|psol|psdb|mdb|petistas?|bolsonaristas?|lulistas?|petralhas?|bolsominions?)(?![\p{L}\d])/giu;
+
   function textOf(el) {
     const m = el.querySelector("#message");
-    return m ? (m.innerText || "").trim().slice(0, 1000) : "";
+    const raw = m ? (m.innerText || "").trim().slice(0, 1000) : "";
+    return raw.replace(PARTISAN, " ").replace(/\s+/g, " ").trim();
   }
 
   function blur(el) {

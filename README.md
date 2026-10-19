@@ -46,9 +46,19 @@ split; the figures are on the Portuguese test split (n = 4,748). The corpus is
 not debate chat, so the rate of blurred political criticism is not measured
 directly.
 
+**Party names are removed before scoring.** In the Portuguese corpus, texts
+that name a party are 40-44% hate (8.6% overall), and the model learned the
+party acronym as a hate cue: "PT" alone scores 0.89, "PL" 0.12, and "Votei no
+PT a vida toda" 0.47 against 0.06 with PL. In the chat mode, PT, PL, PSOL,
+PSDB, MDB, petista, bolsonarista, lulista, petralha and bolsominion are removed
+from the text sent to the model (the chat still shows the full message). Both
+sides then score alike; scores of attacks on groups do not change, and the
+metrics above move by at most 2 points. An attack on a group that also names a
+party loses part of its score.
+
 **Test with the fixture.** Open
 `chrome-extension://<extension id>/test/yt_chat_fixture.html` (the id is shown
-on the extensions page). It mimics the chat markup with 16 synthetic messages
+on the extensions page). It mimics the chat markup with 18 synthetic messages
 and lists the expected result for each level.
 
 **Test on a debate replay.**
