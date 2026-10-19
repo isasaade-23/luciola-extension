@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Luciola: fixture do chat do YouTube</title>
+<style>
+  body { margin: 0; font: 13px/1.5 Roboto, Arial, sans-serif; background: #fff; color: #0f0f0f; }
+  .wrap { display: flex; gap: 24px; padding: 16px; }
+  .chat { width: 380px; border: 1px solid #ddd; border-radius: 12px; overflow: hidden; }
+  yt-live-chat-header-renderer { display: flex; align-items: center; padding: 10px 12px;
+    border-bottom: 1px solid #eee; font-weight: 500; }
+  #primary-content { flex: 1; }
+  yt-live-chat-text-message-renderer { display: block; padding: 4px 12px; }
+  #author-name { color: #606060; margin-right: 6px; }
+  .side { max-width: 460px; }
+  .side li { margin: 4px 0; }
+  button#add { padding: 6px 12px; cursor: pointer; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="chat">
+    <!-- Same tags and ids the content script looks for in the real chat. -->
+    <yt-live-chat-header-renderer>
+      <div id="primary-content">Replay do chat (fixture)</div>
+      <div id="action-buttons"></div>
+    </yt-live-chat-header-renderer>
+    <div id="items"></div>
+  </div>
+  <div class="side">
+    <h3>Como usar</h3>
+    <ol>
+      <li>Abra esta página pelo endereço <code>chrome-extension://&lt;id da Luciola&gt;/test/yt_chat_fixture.html</code> (o id aparece em <code>brave://extensions</code>).</li>
+      <li>As 8 primeiras mensagens entram ao abrir. O botão abaixo acrescenta as outras 8, uma por clique, para testar mensagens novas.</li>
+      <li>Troque o nível no popup e veja o resultado mudar sem recarregar.</li>
+    </ol>
+    <button id="add">Adicionar mensagem</button>
+    <h3>Esperado (modelo linear v5, frases sintéticas)</h3>
+    <ul>
+      <li><b>Conservador (0,67):</b> embaça só a 16 ("tudo gado", 0,75).</li>
+      <li><b>Equilibrado (0,57):</b> embaça 11, 15 e 16.</li>
+      <li><b>Sensível (0,424):</b> embaça 9, 10, 11, 15 e 16.</li>
+      <li>As 8 críticas políticas (1 a 8) não embaçam em nenhum nível.</li>
+      <li>12, 13 e 14 são ódio explícito e não embaçam em nenhum nível: limitação conhecida do modelo.</li>
+    </ul>
+  </div>
+</div>
+<script src="yt_chat_fixture.js"></script>
+<script src="../content_ytchat.js"></script>
+</body>
+</html>

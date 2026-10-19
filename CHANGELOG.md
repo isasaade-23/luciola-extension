@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.1.0 — 2026-10-19
+
+- YouTube live chat mode (`content_ytchat.js`): works on live chats and chat
+  replays, watches new messages, scores them in batches in the service worker
+  and blurs the ones above the chosen level. A click reveals; nothing is
+  removed. Counter "X of Y messages blurred" in the chat header.
+- Popup: on/off switch, three sensitivity levels (conservative 0.67, balanced
+  0.57, sensitive 0.424; default conservative) and a limitations note.
+- Thresholds chosen by false positive rate on the Portuguese validation split.
+- Fixture `test/yt_chat_fixture.html` with 16 synthetic messages.
+- No server, no collection, no message logging.
+
 ## 0.3.0 — 2026-08-16
 
 - Brand icons rendered from the official Luciola mark (replacing placeholders).

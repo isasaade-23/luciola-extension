@@ -9,7 +9,7 @@ $ver = (Get-Content (Join-Path $root "manifest.json") -Raw | ConvertFrom-Json).v
 $out = Join-Path $PSScriptRoot "luciola-extension-$ver.zip"
 
 $files = @(
-  "manifest.json", "background.js", "content.js",
+  "manifest.json", "background.js", "content.js", "content_ytchat.js",
   "LICENSE", "LICENSE-MODEL.md",
   "src/clean.js", "src/model.js", "src/tfidf.js",
   "model/luciola_linear_v5.json",

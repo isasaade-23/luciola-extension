@@ -45,3 +45,28 @@ async function scan() {
 }
 
 $("scan").addEventListener("click", scan);
+
+// YouTube live chat mode: content_ytchat.js reads these keys and re-applies
+// them to the open chat as soon as they change.
+for (const k of ["yt_section", "yt_enabled", "yt_level", "yt_level_conservative",
+  "yt_level_balanced", "yt_level_sensitive", "yt_level_hint", "yt_limits"]) {
+  $(k).textContent = t(k);
+}
+
+chrome.storage.sync.get(["ytEnabled", "ytLevel"], (st) => {
+  const enabled = st.ytEnabled !== false; // on by default
+  const level = st.ytLevel || "conservative";
+  $("ytEnabled").checked = enabled;
+  $("ytLevels").disabled = !enabled;
+  const radio = document.querySelector(`input[name="ytLevel"][value="${level}"]`);
+  if (radio) radio.checked = true;
+});
+
+$("ytEnabled").addEventListener("change", () => {
+  $("ytLevels").disabled = !$("ytEnabled").checked;
+  chrome.storage.sync.set({ ytEnabled: $("ytEnabled").checked });
+});
+
+for (const r of document.querySelectorAll('input[name="ytLevel"]')) {
+  r.addEventListener("change", () => chrome.storage.sync.set({ ytLevel: r.value }));
+}

@@ -10,5 +10,13 @@
   "disclaimer": { "message": "As probabilidades são uma representação do modelo, não um veredito humano. O estudo por trás da ferramenta mede sobre-sinalização de alguns termos de identidade. Ela apoia a revisão, não a substitui." },
   "learn_more": { "message": "Saiba mais" },
   "yt_blur_label": { "message": "Luciola: possível discurso de ódio — mostrar" },
-  "yt_counter": { "message": "$1 de $2 mensagens embaçadas" }
+  "yt_counter": { "message": "$1 de $2 mensagens embaçadas" },
+  "yt_section": { "message": "Chat ao vivo do YouTube" },
+  "yt_enabled": { "message": "Embaçar mensagens no chat" },
+  "yt_level": { "message": "Sensibilidade" },
+  "yt_level_conservative": { "message": "Conservadora" },
+  "yt_level_balanced": { "message": "Equilibrada" },
+  "yt_level_sensitive": { "message": "Sensível" },
+  "yt_level_hint": { "message": "Conservadora embaça só quando o modelo tem mais certeza e deixa passar mais crítica política." },
+  "yt_limits": { "message": "Detecta parte do discurso de ódio em português. Pode errar nos dois sentidos. Não substitui a moderação do canal. Nada sai do navegador: as mensagens não são enviadas nem guardadas." }
 }

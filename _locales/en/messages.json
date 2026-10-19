@@ -10,5 +10,13 @@
   "disclaimer": { "message": "Probabilities are a model representation, not a human verdict. The study behind this tool measures over-flagging of some identity terms. It supports review, it does not replace it." },
   "learn_more": { "message": "Learn more" },
   "yt_blur_label": { "message": "Luciola: possible hate speech — show" },
-  "yt_counter": { "message": "$1 of $2 messages blurred" }
+  "yt_counter": { "message": "$1 of $2 messages blurred" },
+  "yt_section": { "message": "YouTube live chat" },
+  "yt_enabled": { "message": "Blur messages in the chat" },
+  "yt_level": { "message": "Sensitivity" },
+  "yt_level_conservative": { "message": "Conservative" },
+  "yt_level_balanced": { "message": "Balanced" },
+  "yt_level_sensitive": { "message": "Sensitive" },
+  "yt_level_hint": { "message": "Conservative blurs only when the model is more certain and lets more political criticism through." },
+  "yt_limits": { "message": "Detects part of the hate speech in Portuguese. It can be wrong both ways. It does not replace channel moderation. Nothing leaves the browser: messages are neither sent nor stored." }
 }

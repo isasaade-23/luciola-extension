@@ -22,13 +22,20 @@
   #stats b { color: #B93A20; }
   .note { font-size: 11px; color: #5D6673; line-height: 1.5; margin: 10px 0 0; }
   .note a { color: #3D5A80; font-weight: 700; }
+  #yt { border-top: 1px solid #E2D9D0; margin: 12px 0 0; padding: 10px 0 0; }
+  #yt h2 { font-size: 12px; margin: 0 0 6px; color: #1F3050; letter-spacing: .3px; }
+  #yt label { display: flex; align-items: center; gap: 6px; font-size: 12px; margin: 4px 0; cursor: pointer; }
+  #yt input { accent-color: #EE6C4D; margin: 0; }
+  #yt .levels { display: flex; gap: 10px; flex-wrap: wrap; }
+  #yt fieldset { border: 0; padding: 0; margin: 6px 0 0; }
+  #yt legend { font-size: 11px; color: #5D6673; padding: 0; margin: 0 0 2px; }
 </style>
 </head>
 <body>
 <header>
   <img src="../icons/icon48.png" alt="">
   <b>Luciola</b>
-  <small>BETA 2.0</small>
+  <small>BETA 1.1</small>
 </header>
 <main>
   <button id="scan"></button>
@@ -39,6 +46,20 @@
   </div>
   <div id="stats"></div>
   <p class="note" id="note"></p>
+  <section id="yt">
+    <h2 id="yt_section"></h2>
+    <label><input id="ytEnabled" type="checkbox"> <span id="yt_enabled"></span></label>
+    <fieldset id="ytLevels">
+      <legend id="yt_level"></legend>
+      <div class="levels">
+        <label><input type="radio" name="ytLevel" value="conservative"> <span id="yt_level_conservative"></span></label>
+        <label><input type="radio" name="ytLevel" value="balanced"> <span id="yt_level_balanced"></span></label>
+        <label><input type="radio" name="ytLevel" value="sensitive"> <span id="yt_level_sensitive"></span></label>
+      </div>
+    </fieldset>
+    <p class="note" id="yt_level_hint"></p>
+    <p class="note" id="yt_limits"></p>
+  </section>
 </main>
 <script src="popup.js"></script>
 </body>

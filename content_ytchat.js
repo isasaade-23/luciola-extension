@@ -10,9 +10,10 @@
 
   const MSG_SELECTOR =
     "yt-live-chat-text-message-renderer, yt-live-chat-paid-message-renderer";
-  // Provisional thresholds per sensitivity level; "conservative" only blurs
-  // when the model is quite sure, so political criticism tends to pass.
-  const LEVELS = { conservative: 0.7, balanced: 0.55, sensitive: 0.424 };
+  // Thresholds per sensitivity level, chosen on the Portuguese validation split
+  // by false positive rate: conservative <= 0.5%, balanced <= 1%, sensitive is
+  // the model threshold. Higher threshold = more criticism lets through.
+  const LEVELS = { conservative: 0.67, balanced: 0.57, sensitive: 0.424 };
   const BATCH_MAX = 40;
   const BATCH_WAIT_MS = 200;
 
@@ -34,9 +35,10 @@
     padding: 1px 8px; border-radius: 999px; background: #1F3050; color: #fff;
     border: 1px solid #EE6C4D; font: 600 11px/1.6 Roboto, Arial, sans-serif; }
   .luciola-reveal:hover { background: #EE6C4D; }
-  #luciola-counter { position: fixed; left: 8px; bottom: 64px; z-index: 2147483646;
-    padding: 2px 9px; border-radius: 999px; background: rgba(31,48,80,.82); color: #fff;
+  #luciola-counter { flex: none; margin: 0 8px; padding: 2px 9px; border-radius: 999px;
+    background: rgba(31,48,80,.82); color: #fff; white-space: nowrap;
     font: 500 11px/1.6 Roboto, Arial, sans-serif; pointer-events: none; }
+  #luciola-counter.luciola-float { position: fixed; left: 8px; top: 8px; z-index: 2147483646; }
   `;
   document.documentElement.appendChild(style);
 
@@ -92,7 +94,14 @@
     if (!settings.enabled || total === 0) { counter.remove(); return; }
     counter.textContent = t("yt_counter", `${blurred} de ${total} mensagens embaçadas`,
       [String(blurred), String(total)]);
-    if (!counter.isConnected) document.body.appendChild(counter);
+    // In the chat header, so it never covers a message; floating at the top
+    // only if YouTube changes the header.
+    const header = document.querySelector("yt-live-chat-header-renderer");
+    const parent = header || document.body;
+    counter.classList.toggle("luciola-float", !header);
+    if (counter.parentElement !== parent) {
+      parent.insertBefore(counter, header ? header.querySelector(":scope > #action-buttons") : null);
+    }
   }
 
   async function flush() {

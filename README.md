@@ -24,6 +24,43 @@ max deviation under 1e-8 on the golden set).
 - `background.js` scores batches; `content.js` collects visible text blocks and
   draws the highlights; `popup/` has the scan button and threshold slider.
 
+## YouTube live chat mode (1.1)
+
+While you watch a live stream or a chat replay on YouTube, the extension scores
+each new chat message and blurs the ones above the chosen level, with the label
+"Luciola: possible hate speech — show". Nothing is deleted: a click reveals the
+message. A small counter in the chat header shows "X of Y messages blurred".
+The popup has an on/off switch and three sensitivity levels; the default is
+conservative, which prefers letting a message through over blurring political
+criticism. Messages are scored in batches by the service worker (about 0.6 ms
+per message measured on a debate replay) and are neither sent nor stored.
+
+| Level | Threshold | Precision | Recall | False positives |
+|---|---|---|---|---|
+| Conservative (default) | 0.67 | 0.71 | 0.16 | 0.6% |
+| Balanced | 0.57 | 0.70 | 0.22 | 0.9% |
+| Sensitive | 0.424 | 0.67 | 0.32 | 1.5% |
+
+Thresholds were chosen by false positive rate on the Portuguese validation
+split; the figures are on the Portuguese test split (n = 4,748). The corpus is
+not debate chat, so the rate of blurred political criticism is not measured
+directly.
+
+**Test with the fixture.** Open
+`chrome-extension://<extension id>/test/yt_chat_fixture.html` (the id is shown
+on the extensions page). It mimics the chat markup with 16 synthetic messages
+and lists the expected result for each level.
+
+**Test on a debate replay.**
+
+1. Load the extension unpacked (below). After any code change, press reload on
+   the extension card and reload the YouTube tab.
+2. Open a debate video that has a chat replay and press "Show chat replay".
+3. Play the video. The counter appears in the chat header once messages arrive.
+4. Switch the level in the popup: the chat updates without reloading.
+5. In the chat frame console, `[Luciola]` lines show batch timing only, never
+   message text.
+
 ## Install (developer mode)
 
 1. `chrome://extensions` and turn on Developer mode.
@@ -36,7 +73,9 @@ The study behind this tool measures real over-flagging of some identity terms:
 a neutral or even positive mention of an identity group can be flagged (the v5
 model, trained on adversarial examples, catches more implicit hate than v4 but
 also flags some pro-minority sentences — see the demo page). Probabilities are
-a model representation, not a human verdict. Research and educational use only:
+a model representation, not a human verdict. In the YouTube chat mode the
+model detects only part of the hate speech in Portuguese, can be wrong both
+ways, and does not replace channel moderation. Research and educational use only:
 the training data licenses do not allow commercial use of the model weights.
 
 ## Support
