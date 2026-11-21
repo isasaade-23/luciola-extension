@@ -20,6 +20,10 @@
   const SELECTOR =
     'p, li, blockquote, [data-testid="tweetText"], [data-ad-comet-preview="message"]';
 
+  // Same party-name mask as the YouTube chat mode (content_ytchat.js): the model learned
+  // "PT" alone as a hate cue, so the names are removed before scoring. Page text is untouched.
+  const PARTISAN = /(?<![\p{L}\d])(pt|pl|psol|psdb|mdb|petistas?|bolsonaristas?|lulistas?|petralhas?|bolsominions?)(?![\p{L}\d])/giu;
+
   function candidateBlocks() {
     const out = [];
     for (const el of document.querySelectorAll(SELECTOR)) {
@@ -47,7 +51,7 @@
     if (blocks.length === 0) return { scanned: 0, flagged: 0 };
     const resp = await chrome.runtime.sendMessage({
       type: "luciola:score",
-      texts: blocks.map((b) => b.text),
+      texts: blocks.map((b) => b.text.replace(PARTISAN, " ").replace(/\s+/g, " ").trim()),
       threshold,
     });
     let flagged = 0;

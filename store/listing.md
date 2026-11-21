@@ -1,4 +1,4 @@
-# Chrome Web Store — material de submissão (v0.3.0, unlisted)
+# Chrome Web Store — material de submissão (v1.1.0, unlisted)
 
 Tudo abaixo é copiar-e-colar no formulário do Developer Dashboard
 (https://chrome.google.com/webstore/devconsole, conta Google da Isabela,
@@ -37,7 +37,7 @@ probabilidade estimada.
 Privacidade por construção:
 • O modelo roda inteiro dentro do navegador. A extensão não tem permissão de
 rede e não faz nenhuma requisição: o texto da página nunca sai do seu aparelho.
-• Nada é coletado. A única coisa salva é a sua preferência de limiar.
+• Nada é coletado. As únicas coisas salvas são as suas preferências (limiar, modo chat e nível).
 
 Limites honestos (leia antes de usar):
 • O modelo vem de um estudo científico e erra. Ele pode sinalizar por engano
@@ -61,11 +61,14 @@ How it works:
 • Text blocks above the threshold get an outline and a badge with the
 estimated probability.
 • The threshold is adjustable in the popup.
+• In YouTube live chat and chat replay, messages with probable hate are
+blurred, with a button to reveal them. Three levels and an on/off switch are in
+the popup.
 
 Privacy by construction:
 • The model runs entirely inside your browser. The extension has no network
 permission and makes no requests: page text never leaves your device.
-• Nothing is collected. The only thing saved is your threshold preference.
+• Nothing is collected. The only things saved are your preferences (threshold, chat mode and level).
 
 Honest limits (read before using):
 • The model comes from a scientific study and makes mistakes. It can wrongly
@@ -80,24 +83,30 @@ https://github.com/isasaade-23/luciola-extension
 
 ## Justificativas de permissão (aba Privacy practices)
 
-- **activeTab**: A extensão só lê o texto da aba ativa quando a pessoa clica em
-  Analisar. Nenhum acesso contínuo ou em segundo plano.
+- **activeTab**: Na análise de página, a extensão só lê o texto da aba ativa
+  quando a pessoa clica em Analisar.
+- **Content script em youtube.com/live_chat\* e live_chat_replay\***: modo chat.
+  Lê as mensagens do chat ao vivo para embaçar as de provável ódio, só dentro
+  do navegador; o texto é descartado após a pontuação. Pode ser desligado no
+  popup. Nenhum outro site tem acesso contínuo.
 - **scripting**: Injeta o script de análise na aba ativa, apenas sob clique,
   para destacar os trechos sinalizados.
-- **storage**: Guarda uma única preferência (o limiar de sinalização). Nenhum
-  conteúdo de página é armazenado.
+- **storage**: Guarda preferências (limiar, modo chat ligado/desligado e nível
+  de sensibilidade). Nenhum conteúdo de página ou de chat é armazenado.
 - **Uso remoto de código**: Nenhum. Todo o código e o modelo vêm no pacote.
 - **Coleta de dados** (formulário de data usage): marcar "não coleta nenhum
   dado de usuário" em todas as categorias.
 
 ## Single purpose (campo do review)
 
-Identificar e destacar, localmente, possível discurso de ódio no texto da
-página ativa, a pedido da pessoa usuária.
+Identificar e destacar ou embaçar, localmente, possível discurso de ódio no
+texto da página ativa (a pedido) e no chat ao vivo do YouTube (ligável e
+desligável pela pessoa usuária).
 
 ## Assets
 
 - Ícone da loja 128×128: `icons/icon128.png` (gerado da marca oficial).
+- Screenshot do modo chat: falta capturar (replay de live com mensagens embaçadas e o contador).
 - Screenshots 1280×800 (mínimo 1, ideal 3): `store/shot1.png` (demo page com
   destaques), `store/shot2.png` (popup com slider), `store/shot3.png` (site
   real). Capturar com a extensão carregada, tema claro.
@@ -106,7 +115,7 @@ página ativa, a pedido da pessoa usuária.
 ## Passo a passo do envio (Isabela)
 
 1. Criar a conta dev: https://chrome.google.com/webstore/devconsole (US$5).
-2. "New item" → subir `store/luciola-extension-0.3.0.zip`.
+2. "New item" → subir `store/luciola-extension-1.1.0.zip`.
 3. Preencher listing com os textos acima (pt-BR e EN), assets, privacy URL.
 4. Privacy practices: justificativas acima + "no data collected".
 5. Distribution: **Visibility = Unlisted**. Salvar e "Submit for review".

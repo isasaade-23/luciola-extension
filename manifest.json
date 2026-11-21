@@ -22,16 +22,6 @@
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
-  "web_accessible_resources": [
-    {
-      "resources": [
-        "model/luciola_linear_v5.json"
-      ],
-      "matches": [
-        "<all_urls>"
-      ]
-    }
-  ],
   "homepage_url": "https://github.com/isasaade-23/luciola-extension",
   "content_scripts": [
     {
