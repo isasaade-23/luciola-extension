@@ -46,15 +46,24 @@ split; the figures are on the Portuguese test split (n = 4,748). The corpus is
 not debate chat, so the rate of blurred political criticism is not measured
 directly.
 
-**Party names are removed before scoring.** In the Portuguese corpus, texts
+**Party acronyms are removed before scoring.** In the Portuguese corpus, texts
 that name a party are 40-44% hate (8.6% overall), and the model learned the
 party acronym as a hate cue: "PT" alone scores 0.89, "PL" 0.12, and "Votei no
-PT a vida toda" 0.47 against 0.06 with PL. In the chat mode, PT, PL, PSOL,
-PSDB, MDB, petista, bolsonarista, lulista, petralha and bolsominion are removed
-from the text sent to the model (the chat still shows the full message). Both
-sides then score alike; scores of attacks on groups do not change, and the
-metrics above move by at most 2 points. An attack on a group that also names a
-party loses part of its score.
+PT a vida toda" 0.47 against 0.06 with PL. PT, PL, PSOL, PSDB and MDB are
+removed from the text sent to the model (the page and the chat still show the
+full text). Both sides then score alike. A party is not a protected group, so
+criticizing a party loses nothing.
+
+Voter labels (petista, bolsonarista, lulista, petralha, bolsominion) are kept.
+Under the strict v2 annotation guideline, political affiliation is a protected
+group, and "Petista e bolsonarista, tudo gado" is hate (0.75, blurred at every
+level). The model scores both sides alike on these words ("Petistas são gado"
+0.74, "Bolsonaristas são gado" 0.79). Known limits: the model reacts to the
+label, not to the attack, so a neutral mention can be blurred at the balanced
+and sensitive levels ("Os bolsonaristas votaram em peso" 0.62, "Os petistas
+votaram em peso" 0.56), and some attacks are missed ("Petralha tem que morrer"
+0.33). The served model was trained before strict v2; the mask fixes only the
+input, not the labels.
 
 **Test with the fixture.** Open
 `chrome-extension://<extension id>/test/yt_chat_fixture.html` (the id is shown

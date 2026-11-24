@@ -9,8 +9,11 @@
 - Popup: on/off switch, three sensitivity levels (conservative 0.67, balanced
   0.57, sensitive 0.424; default conservative) and a limitations note.
 - Thresholds chosen by false positive rate on the Portuguese validation split.
-- Party names and partisan labels removed before scoring in the chat mode, to
-  undo a learned party bias ("PT" alone scored 0.89, "PL" 0.12).
+- Party acronyms (PT, PL, PSOL, PSDB, MDB) removed before scoring, to undo a
+  learned party bias ("PT" alone scored 0.89, "PL" 0.12). Voter labels
+  (petista, bolsonarista, ...) are kept, following the strict v2 guideline
+  (political affiliation is a protected group); fixture message 16 is now
+  expected hate at every level.
 - Fixture `test/yt_chat_fixture.html` with 18 synthetic messages.
 - No server, no collection, no message logging.
 

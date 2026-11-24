@@ -21,8 +21,9 @@
     'p, li, blockquote, [data-testid="tweetText"], [data-ad-comet-preview="message"]';
 
   // Same party-name mask as the YouTube chat mode (content_ytchat.js): the model learned
-  // "PT" alone as a hate cue, so the names are removed before scoring. Page text is untouched.
-  const PARTISAN = /(?<![\p{L}\d])(pt|pl|psol|psdb|mdb|petistas?|bolsonaristas?|lulistas?|petralhas?|bolsominions?)(?![\p{L}\d])/giu;
+  // "PT" alone as a hate cue, so party acronyms are removed before scoring; voter labels
+  // (petista, bolsonarista, ...) are kept. Page text is untouched.
+  const PARTISAN = /(?<![\p{L}\d])(pt|pl|psol|psdb|mdb)(?![\p{L}\d])/giu;
 
   function candidateBlocks() {
     const out = [];
